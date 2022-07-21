@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <?php
+        $title = "Новости";
+        require_once "functions.php";
+        $news = getNews (5);
+    ?>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Новости</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="content-box">
+        <div class="news-box">
+            <h1>Новости</h1>
+            <?php
+                for ($i = 0; $i < count($news); #i++) {
+                    echo '<div class=\"news-box-post\">
+                            <h2>'.$news[$i]["title"].'</h2>
+                            <p>'.$news[$i]["intro_text"].'</p>
+                            <p class="time">Дата публикации: '.$news[$i]["time"].'</p>';
+            ?>
+            <div class="news-box-post">
+                <h2>Новость 1</h2>
+                <p>Все, что видно сверху - попытка использовать php без БД. Явно неудачная.
+                    Снизу - что хотелось получить.
+                <p class="time">Дата публикации: 20.07.2022 21:47:09</p>
+            </div>
+            <div class="news-box-post">
+                <h2>Новость 2</h2>
+                <p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Dolores, quod, sit quasi repellendus facilis harum numquam sapiente. A, hic, i...</p>
+                <p class="time">Дата публикации: 20.07.2022 21:46:43</p>
+            </div>
+            <div class="news-box-post">
+                <h2>Новость 3</h2>
+                <p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Dolores, quod, sit quasi repellendus facilis harum numquam sapiente. A, hic, i...</p>
+                <p class="time">Дата публикации: 20.07.2022 21:46:43</p>
+
+        </div>
+        <div class="link"><a href="second_page.html">Все новости</a></div>
+        <div class="link"><a href="second_page.html">Обратная связь</a></div>
+    </div>
+</body>
+
+</html>
