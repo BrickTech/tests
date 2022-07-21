@@ -1,0 +1,27 @@
+*:before, *:after{
+	box-sizing: border-box;
+}
+.content-box{
+	max-width: 760px;
+	margin: 0 auto;
+	padding: 20px 20px;
+	text-align: justify;
+	font-family: RobotoBold, sans-serif;
+}
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.news-box-post {
+	padding-top: 20px;
+}
+h2 {
+	margin-bottom: 8px;
+}
+.time {
+	font-size: 12px;
+	text-align: right;
+}
+.link {
+	margin-top: 20px;
+}
